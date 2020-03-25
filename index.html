@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW_13</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="data-selection">
+    <input type="button" name="cars" id="cars" value="cars">
+    <input type="button" name="add" id="person" value="person">
+    <input type="button" name="add" id="company" value="company">
+    <span id="helper" class="style-info">select information of interest</span>
+</div>
+
+<div class="wrapper">
+
+<table id="table-header">
+</table>
+
+    <div id="confirm" class="style-info disappear">
+        <p>Are you sure you want to remove?</p>
+        <div id="confirm-btn">
+            <input type="button" name="confirm" value="Yes">
+            <input type="button" name="confirm" value="No">
+        </div>
+    </div>
+</div>
+
+
+<div id="show-block" class="style-info disappear">
+    <img id="close" src="images/close.png" alt="#">
+
+    <form name="save-form-cars" class="disappear" data-type="cars">
+        <input type="number" name="id" id="id-c" readonly><label for="id-c">id</label><br>
+        <input type="text" name="model" id="model-c"><label for="model-c">model</label><br>
+        <input type="text" name="color" id="color-c"><label for="color-c">color</label><br>
+        <input type="number" name="year" id="year-c"><label for="year-c">year</label><br>
+        <input type="number" name="price" id="price-c"><label for="price-c">price</label><br>
+        <input type="text" name="owners" id="owners-c"><label for="owners-c">owners</label><br>
+        <input type="button" name="save" value="save">
+    </form>
+
+    <form name="save-form-persons" class="disappear" data-type="persons">
+        <input type="number" name="id" id="id-p" readonly><label for="id-p">id</label><br>
+        <input type="text" name="name" id="name-p"><label for="name-p">name</label><br>
+        <input type="text" name="surname" id="surname-p"><label for="surname-p">surname</label><br>
+        <input type="number" name="balance" id="balance-c"><label for="balance-c">balance</label><br>
+        <input type="text" name="cars" id="cars-c"><label for="cars-c">cars</label><br>
+        <input type="button" name="save" value="save">
+    </form>
+
+    <form name="save-form-companies" class="disappear" data-type="companies">
+        <input type="number" name="id" id="id-co" readonly><label for="id-co">id</label><br>
+        <input type="text" name="name" id="name-co"><label for="name-co">name</label><br>
+        <input type="text" name="balance" id="balance-co"><label for="balance-co">balance</label><br>
+        <input type="text" name="cars" id="cars-co"><label for="cars-co">cars</label><br>
+        <input type="button" name="save" id="save" value="save">
+    </form>
+</div>
+
+
+
+<script defer src="node_modules/jquery/dist/jquery.min.js"></script>
+<script defer src="js/helpers.js"></script>
+<script defer src="js/BasePerson.js"></script>
+<script defer src="js/Person.js"></script>
+<script defer src="js/Company.js"></script>
+<script defer src="js/Car.js"></script>
+<script defer src="js/Table.js"></script>
+<script defer src="js/Dispatcher.js"></script>
+<script defer src="js/app.js"></script>
+
+</body>
+</html>

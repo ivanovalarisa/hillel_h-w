@@ -1,0 +1,114 @@
+#data-selection {
+    margin-bottom: 20px;
+}
+table {
+    text-align: center;
+    margin: 30px 10px;
+}
+th {
+    padding: 5px 10px;
+    font-weight: normal;
+    color: #039;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+td {
+    color: #253c50;
+    border-top: 1px solid #e8edff;
+    padding: 5px 10px;
+}
+tr:nth-child(2n) {
+    background: #e8edff;
+}
+input {
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 5px 5px;
+    outline: none;
+    color: #002867;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#show-block {
+    position: relative;
+}
+
+#save-block {
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+#save-block #save-new {
+    margin: auto;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+#show-block input {
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+#show-block input[data-key] {
+    text-transform: none;
+}
+#show-block input[name=save] {
+    margin: 10px 35%;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+#show-block form input {
+    text-transform: none;
+}
+#show-block input[placeholder] {
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.wrong  {
+    border: 2px solid red;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+#confirm div {
+    display: flex;
+    justify-content: center;
+}
+
+#close {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+}
+.style-info {
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    color: #002867;
+    background: #e8edff;
+    border: 4px double #253c50;
+}
+
+.disappear {
+    display: none;
+}
+.appear {
+    display: inline-block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
